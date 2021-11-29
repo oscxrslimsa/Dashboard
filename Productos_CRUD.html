@@ -893,15 +893,50 @@
             </div>
         </div>
     </div>
-   <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModelLabel" aria-hidden="true"><!--Creación del modal para agregar o editar-->
+   <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModelLabel" aria-hidden="true">
+       <!--Creación del modal para agregar o editar-->
         <div class="modal-dialog" role="document">
             <div class="modal-header">
-                
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;></span>
+                </button>
             </div>
+            <form id="formProductos">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="nombrePr" class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombrePr">
+                    </div>
+                    <div class="form-group">
+                        <label for="precioPr" class="col-form-label">Precio:</label>
+                        <input type="number" class="form-control" id="precioPr">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionPr" class="col-form-label">Descripción:</label>
+                        <input type="text" class="form-control" id="descripcionPr">
+                    </div>
+                    <div class="form-group">
+                        <label for="imagenPr" class="col-form-label">Imagen:</label>
+                        <input type="image" class="form-control" id="imagenPr">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                </div>
+            </form>
         </div>
    </div>
+<!-- jQuery, Pooper.js, Bootstrap JS-->
+   <script src="jquery/jquery-3.3.1.min.js"></script>
+   <script src="pooper/pooper.min.js"></script>
+   <script src="bootstrap/js/boostrap.min.js"></script>
 
-  
+   <!--datatable JS-->
+   <script type="text/javascript" src="datatables/datatables.min.js"></script>
+
+   <script type="text/javascript" src="main.js"></script>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
